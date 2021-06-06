@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout design 2 </title>
+    <style>
+      .grid-container{
+          display: grid;
+          grid-template-columns: auto auto auto auto auto auto;
+          
+      }
+      .grid-container > div{
+          background-color: aqua;
+          padding: 10px;
+          text-align: center;
+          font-size: 1.5rem;
+           border:2px solid brown;
+    }
+      .header{
+          grid-column: 1 / 7 ;
+      }
+      .menu{
+          grid-column: 1/2;
+          grid-row: 2/4;
+      }
+      .main{
+          grid-column: 2/6;
+      }
+      .aside{
+          grid-column: 6/7;
+          grid-row: 2/4;
+      }
+      .footer{
+          grid-column: 2/6;
+      }
+      
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">
+           <h1>Header</h1>
+        </div>
+        <div class="menu">
+            <h1>Menu</h1>
+        </div>
+        <div class="main">
+            <h1>Main</h1>
+         </div>
+         <div class="aside">
+            <h1> Aside</h1>
+         </div>
+        
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+</html>

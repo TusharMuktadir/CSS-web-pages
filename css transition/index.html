@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transition</title>
+    <style>
+        .main{
+            background-color: aqua;
+            height: 400px;
+            width: 400px;
+            text-align: center;
+            margin: 0 auto;
+
+            transition-property: width height transform;
+            transition-duration: 3s;
+        }
+        .main:hover{
+            width:600px;
+            height:500px;
+            transform: rotate(360deg);
+        }
+        h1{
+            font-size: 3rem;
+            transition: font-size 2s;
+        }
+        h1:hover{
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1> Tushar</h1>
+    </div>
+    
+</body>
+</html>

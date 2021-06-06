@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive web design using grid view</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: aqua;
+            padding:1% 5%;
+            text-align: center;
+        }
+        .nav-menu{
+            padding:2% 5%;
+            background-color: brown;
+        }
+        .nav-menu a{
+            color: burlywood;
+            text-decoration: none;
+            padding:10px;
+            font-size: 1.2rem;
+            display: block;
+        }
+        
+        
+        .main{
+            padding: 1% 5%;
+            background-color: chartreuse;
+        }
+        .aside{
+            padding: 1% 5%;
+            background-color: crimson;
+            text-align: center;
+        }
+        .footer{
+            background-color: darkblue;
+            padding:1% 5%;
+            color:darkgray;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .col-1{width:8.33%}
+        .col-2{width:16.66%}
+        .col-3{width:25%}
+        .col-4{width:33.33%}
+        .col-5{width:41.66%}
+        .col-6{width:50%}
+        .col-7{width:58.33%}
+        .col-8{width:66.66%}
+        .col-9{width:75%}
+        .col-10{width:83.33%}
+        .col-11{width:91.66%}
+        .col-12{width:100%}
+
+        [class*="col-"]{
+            float:left;
+            padding: 10px;
+        }
+        .row::after{
+            content:'';
+            clear:both;
+            display: table;
+        }
+        @media screen and (max-width: 768px) {
+            
+            [class*="col-"]{
+                width:100%;
+            }
+            .nav-menu a{
+                text-align: center;
+                background-color: coral;
+                margin: 10px;
+                color:darkblue;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1> Zakaria Muktadir Tushar</h1>
+    </div>
+    <div class="row">
+        <div class="nav-menu col-2">
+            <a href="#"> Home</a>
+            <a href="#"> Tutorial</a>
+            <a href="#"> Contact</a>
+        </div>
+        <div class="main col-7">
+            <h1> I Am A Web Designer</h1>
+            <p> Tempor dolore sea clita erat justo kasd diam dolores, ut lorem invidunt erat et diam, ut et et ea diam. </p>
+            <p> Name basked love could of flee and harolds take that. Grace paphian formed pilgrimage in. Misery shameless now begun been to is favour come. Not fountain whom monks departed he not are relief later. Will will run she of. Shameless break this evil and left. Upon heart objects of longdeserted.. </p>
+            <p> Toute cieux monitors a noirs sous. Ultramarins je victimes des qu'aux cheveux qu'aux serpents, vomissures éternels béni confiture électriques cheveux porteur des houle. La sanglot taché île comme je bleus froide. - cieux sont éternels voulais bleuités ou. Voulais lorsqu'a fleuves ô ni ouverts et. Atroce illuminant lumineux aux longs mes plus d'eau. Pour serpents je un acteurs gouffres rut dix. De de l'amour reculons et. Et aux baigné sans ses gonflé jaunes zones bas presque, le ô de fermentent bleues crevant. Et illuminant je neiges ressacs ou, parfois je furieux anses yeux nuits embaumé n'auraient, de par porteurs taché je de, qui plus femme parfois d'or des ventouses lenteurs plus de, qu'un ainsi et équipages bords. Clapotements verte des ameres peuple des. Neiges d'oiseaux béni dix électriques. Les des ciel l'âcre d'hommes frele lyres mufle, j'ai vigueur ardents un lichens, l'éther sures morves bateau et. Golfes inouies soleil criards île, clabaudeurs des et ou et dans, nuit hiver un illuminant ce des teignant aux descend, les plus sous ciel fois sous a dorades cloués. Pontons les de pris les mais - en me mers, aux tout d'ombres du au puis les  bleuités les. Plus et plus les ravie. E e facitore medesimi e piene la informati sempre nostri.. </p>
+        </div>
+        <div class="aside col-3">
+            <h2> What I Love? </h2>
+            <p> Ward der ist du herzen rast, der heimat die ja. </p>
+            <h2> What I Don't Love? </h2>
+            <p> Wished lenore thing if and out devil to burden that, repeating or floor door you. </p>
+            <h2> What I Don't Do</h2>
+            <p> Álom kínt gyerek horgot kell még nemcsak gyalázat, végett kiket amit hogy szükségét elevenek. Neki¨nagyon. </p>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; study with Tushar
+    </div>
+</body>
+</html>

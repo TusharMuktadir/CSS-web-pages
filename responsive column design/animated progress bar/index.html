@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Progress Bar</title>
+    <style>
+          *{
+            box-sizing: border-box;
+        }
+        .skill-container {
+            background-color: aqua;
+            width:700px;
+            padding:20px;
+        }
+        .skill-container li{
+            list-style-type: none;
+            margin: 50px 0;
+            font-weight:bolder;
+            text-transform: uppercase;
+            position: relative;
+            
+        }
+        .skill-container li::before{
+            content:'';
+            position: absolute;
+            top:calc(100% + 5px);
+            left:0;
+            background-color: rgb(165,167,173);
+            width:100%;
+            height:25px;
+            border-radius: 1000px;
+
+        }
+
+        .skill-container li::after{
+            content:'';
+            position: absolute;
+            top:calc(100% + 5px);
+            left:0;
+            background-color: rgb(249,249,249);
+            width:0;
+            height:25px;
+            border-radius: 1000px;
+
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: 2;
+            animation-delay: 2s;
+           
+            animation-direction: forward;
+
+        }
+        .skill-container li.html::after{
+            animation-name: html;
+        }
+        @keyframes html{
+            to{
+                width:90%;
+                background-color: brown;
+            }
+        }
+       .skill-container li.css::after{
+            animation-name: css;
+        }
+        @keyframes css{
+            to{
+                width:85%;
+                background-color: chocolate;
+            }
+        }
+        .skill-container li.js::after{
+            animation-name: js;
+        }
+        @keyframes js{
+            to{
+                width:85%;
+                background-color: darkgreen;
+            }
+        }
+        .skill-container li.bs::after{
+            animation-name: bs;
+        }
+        @keyframes bs{
+            to{
+                width:80%;
+                background-color: darkmagenta;
+            }
+        }
+        .skill-container li.python::after{
+            animation-name: python;
+        }
+        @keyframes python{
+            to{
+                width:75%;
+                background-color: black;
+            }
+        }
+        
+    </style>
+    
+      
+        
+</head>
+<body>
+    <div class="skill-container">
+        <ul>
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+            <li class="js">JS</li>
+            <li class="bs">Bootstrap</li>
+            <li class="python">python</li>
+        </ul>
+    </div>
+</body>
+</html>

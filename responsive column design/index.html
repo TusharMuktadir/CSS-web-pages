@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive column design</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            background-color: aqua;
+        }
+        .column{
+            float:left;
+            width:25%;
+            padding:10px;
+        }
+        @media screen and (max-width: 992px){
+            .column{
+                float:left;
+                width:50%;
+            }
+        }
+        
+        @media screen and (max-width: 600px){
+            .column{
+                
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="column">
+        <h1>HTML</h1>
+        <p> Labore et magna ut et dolore est rebum, dolores sea et rebum voluptua amet clita erat tempor, labore diam ut voluptua ipsum labore clita, vero eos sed erat sit elitr sadipscing sit, labore rebum accusam sanctus ea nonumy voluptua sadipscing vero tempor. Ipsum ut sit est dolor diam ipsum kasd. </p>
+    </div>
+    <div class="column">
+        <h1>CSS</h1>
+        <p> Labore et magna ut et dolore est rebum, dolores sea et rebum voluptua amet clita erat tempor, labore diam ut voluptua ipsum labore clita, vero eos sed erat sit elitr sadipscing sit, labore rebum accusam sanctus ea nonumy voluptua sadipscing vero tempor. Ipsum ut sit est dolor diam ipsum kasd. </p>
+    </div>
+    <div class="column">
+        <h1>JAVASCRIPT</h1>
+        <p> Labore et magna ut et dolore est rebum, dolores sea et rebum voluptua amet clita erat tempor, labore diam ut voluptua ipsum labore clita, vero eos sed erat sit elitr sadipscing sit, labore rebum accusam sanctus ea nonumy voluptua sadipscing vero tempor. Ipsum ut sit est dolor diam ipsum kasd. </p>
+    </div>
+    <div class="column">
+        <h1>BOOTSTRAP</h1>
+        <p> Labore et magna ut et dolore est rebum, dolores sea et rebum voluptua amet clita erat tempor, labore diam ut voluptua ipsum labore clita, vero eos sed erat sit elitr sadipscing sit, labore rebum accusam sanctus ea nonumy voluptua sadipscing vero tempor. Ipsum ut sit est dolor diam ipsum kasd. </p>
+    </div>
+</body>
+</html>

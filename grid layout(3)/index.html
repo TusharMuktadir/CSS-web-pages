@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout 3</title>
+<style>
+    *{
+        padding:0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height:100vh;
+        background-color: chartreuse;
+        display:grid;
+        
+    }
+    header{
+        grid-area: h;
+    }
+    main{
+        grid-area: m;
+    }
+    article{
+
+    }
+    section{
+
+    }
+    aside{
+
+    }
+    footer{
+        grid-area: f;
+
+    }
+</style>
+        
+</head>
+<body>
+   
+    <header> 
+        <nav> header nav</nav>
+    </header>
+    <main> 
+        <article>
+            <section id="section1"> section1</section>
+            <section id="section2"> section2</section>
+            <section id="section3"> section3</section>
+
+            <aside id="aside1"> aside 1</aside>
+            <aside id="aside2"> aside 2</aside>
+        </article>
+    </main>
+    <footer>
+        <nav id="nav1"> nav1</nav>
+        <nav id="nav2"> nav2</nav>
+    </footer>
+</body>
+</html>

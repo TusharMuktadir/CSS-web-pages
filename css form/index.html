@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css form </title>
+    <style>
+        input{
+            width:100%;
+            padding:10px 20px;
+            font-size:1rem;
+            margin:20px 0;
+            background-color:turquoise;
+            box-sizing: border-box;
+            border:3px solid brown;
+            border-radius: 8px;
+        }
+        label{
+            color:blue;
+        }
+        #search{
+            background-image: url("image/search.png");
+            background-repeat: no-repeat;
+            background-position: 10px 16px ;
+            background-color: tomato;
+            font-size: 1rem;
+            width:200px;
+            padding:15px 40px;
+            transition: 0.4s ease-in-out ;
+        }
+        #search:focus{
+            background-color: crimson;
+            width:100%;
+        }
+        textarea{
+            resize: none;
+            width:40%;
+            padding:10px;
+            border:3px solid red;
+            border-radius: 10px;
+            color:white;
+            background-color: indianred;
+        }
+        input[type="button"]{
+            width:100px;
+            background-color: brown;
+            border: none;
+            padding:10px;
+            color:whitesmoke;
+            cursor: pointer;
+        }
+        select{
+            padding:10px;
+            background-color: yellowgreen;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+
+        
+        <input type="text" name="search" id="search" placeholder="search">
+        <p></p>
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname">
+         
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname">
+
+        <select name="subject_name" id="subjects">
+            <option value="c"> C program </option>
+            <option value="c++"> C++ program </option>
+            <option value="java"> java program </option>
+        </select>
+        <p></p>
+        <textarea name="" id="" cols="25" rows="11">Write Your comments Here</textarea>
+        <p></p>
+        <input type="button" value="submit">
+        <input type="button" value="reset">
+        
+    </form>
+</body>
+</html>
